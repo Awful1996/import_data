@@ -1,0 +1,2701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="Интерактивная карта" />
+<meta name="description" content="Интерактивная карта" />
+<link href="/bitrix/cache/css/s1/gpk-ru/kernel_main/kernel_main.css?150969766129761" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/gpk-ru/kernel_fairytale.tpic/kernel_fairytale.tpic.css?1509697657546" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/gpk-ru/kernel_altasib.errorsend/kernel_altasib.errorsend.css?15096976574919" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/gpk-ru/page_c16b315635c02968f3067e17c1c44d06/page_c16b315635c02968f3067e17c1c44d06.css?150969765814996" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/gpk-ru/template_8daac27d9894500d00756d0b01caea5b/template_8daac27d9894500d00756d0b01caea5b.css?1509697658406663" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<link href="/bitrix/panel/main/popup.css?145310562823084" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/','USER_ID':'','SERVER_TIME':'1510058067','USER_TZ_OFFSET':'0','USER_TZ_AUTO':'Y','bitrix_sessid':'f213d421004208c515cd66b06c0ccd74'});</script>
+
+
+<script type="text/javascript" src="/bitrix/js/main/core/core.js?1500641892118107"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_db.js?150064189217880"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_ajax.js?150064189236424"></script>
+<script type="text/javascript" src="/bitrix/js/main/json/json2.min.js?14002686193467"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_ls.js?143334723110430"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_fx.js?149215375216888"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_frame_cache.js?146943361117555"></script>
+<script type="text/javascript" src="/bitrix/js/main/rsasecurity.js?143221345325045"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_window.js?150064189297266"></script>
+<script type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css','/bitrix/js/main/core/css/core_popup.css','/bitrix/js/main/core/css/core_date.css','/bitrix/js/fairytale.tpic/css/style.css','/bitrix/js/altasib.errorsend/css/window.css','/bitrix/templates/gpk-ru/components/bitrix/menu/menu-for-int-maps/style.css','/bitrix/components/bitrix/system.pagenavigation/templates/orange/style.css','/bitrix/templates/gpk-ru/components/bitrix/news.list/arhiv-ocheredei-ru/style.css','/bitrix/templates/gpk-ru/components/bitrix/menu/right-menu-green/style.css','/bitrix/components/bitrix/system.pagenavigation/templates/modern/style.css','/bitrix/templates/gpk-ru/components/bitrix/news.list/arhiv-ocheredei-list-ru/style.css','/bitrix/templates/gpk-ru/css/bootstrap.css','/bitrix/templates/gpk-ru/css/slider-cam.css','/bitrix/templates/gpk-ru/css/hover.css','/bitrix/templates/gpk-ru/lightbox/lightbox.css','/bitrix/templates/gpk-ru/css/styles.css','/bitrix/templates/gpk-ru/css/tiles.css','/bitrix/templates/gpk-ru/css/serg.css','/bitrix/templates/gpk-ru/css/elastislide.css','/bitrix/templates/gpk-ru/css/modal.css','/bitrix/templates/gpk-ru/css/sky-mega-menu.css','/bitrix/templates/gpk-ru/css/maps.css','/bitrix/templates/gpk-ru/css/cam.css','/bitrix/templates/gpk-ru/css/fotorama.css','/bitrix/templates/gpk-ru/css/cssgram.min.css','/bitrix/templates/gpk-ru/css/info.css','/bitrix/templates/gpk-ru/css/tabs.css','/bitrix/templates/gpk-ru/flexisel/style.css','/bitrix/templates/gpk-ru/components/bitrix/menu/top-menu/style.css','/bitrix/templates/gpk-ru/components/bitrix/breadcrumb/breadcrumb/style.css']); </script>
+<script type="text/javascript">
+var ALXerrorLogoImgSrc='/bitrix/images/altasib.errorsend/altasib.errorsend.png';
+var ALXerrorSendMessages={
+	'head':'Найденная Вами ошибка в тексте',
+	'footer':'<b>Послать сообщение об ошибке автору?</b><br/><span style="font-size:10px;color:#7d7d7d">(ваш браузер останется на той же странице)</span>',
+	'comment':'Комментарий для автора (необязательно)',
+	'TitleForm':'Сообщение об ошибке',
+	'ButtonSend':'Отправить',
+	'LongText':'Вы выбрали слишком большой объем текста.',
+	'LongText2':'Попробуйте ещё раз.',
+	'text_ok':'Ваше сообщение отправлено.',
+	'text_ok2':'Спасибо за внимание!'
+}
+</script>
+<script type='text/javascript' async src='/bitrix/js/altasib.errorsend/error.js'></script>
+
+
+
+<script type="text/javascript" src="/bitrix/templates/gpk-ru/components/bitrix/menu/right-menu-green/script.js?1459608487507"></script>
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "4dc29a525cb6b5471204405e1c27400a"]); _ba.push(["host", "gpk.gov.by"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Интерактивная карта</title>
+<!-- Сообщение об устаревшем браузере -->    
+<!-- // Сообщение об устаревшем браузере -->
+  
+<meta name="keywords" content="Интерактивная карта" />
+<meta name="description" content="Интерактивная карта" />
+
+
+ 
+    
+
+
+ 
+
+  
+ 
+<style>
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 160px;
+    right: 20px;
+    display:none;
+}
+</style> 
+
+
+<link href="http://gpk.gov.by/includes/global.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Scada&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+
+
+
+<script>
+$(document).ready(function(){
+  $('.slider4').bxSlider({
+    slideWidth: 300,
+    minSlides: 1,
+    maxSlides: 3,
+    slideMargin: 10
+  });
+});
+</script>
+
+ 
+ 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Scada&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/bitrix/templates/gpk-ru/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/bitrix/templates/gpk-ru/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/bitrix/templates/gpk-ru/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="/bitrix/templates/gpk-ru/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="shortcut icon" href="/bitrix/templates/gpk-ru/ico/favicon.ico">    
+</head>
+
+
+<body>
+
+<div id="panel"></div>	
+<div class="clear"></div>
+
+<div class="navbar navbar-inverse">
+                <div class="container gpk-menu-container" style="text-align: center;">
+
+                    <ul class="nav navbar-nav gpk-menu">
+						<li class="big-i hamburger-button">
+							<a class="toggle-mnu">
+								<div class="hamburger" id="hamburger-1">
+						          <span class="line"></span>
+						          <span class="line"></span>
+						          <span class="line"></span>
+						        </div>
+						        <p>Разделы портала</p>
+
+							</a>
+						</li>
+					</ul> 
+					<ul class="nav navbar-nav float-right gpk-menu">
+						<li class="big-li active"><a href="/">рус</a></li>  
+						<li class="big-li"><a href="http://gpk.gov.by/by/">бел</a></li>
+						<li class="big-li"><a href="http://gpk.gov.by/en/">en</a></li>  
+					</ul>
+
+                </div><!-- /.container -->
+</div>
+
+
+<div class="container menu-wrapper">
+	<div class="menu-razdel">
+		<div id="razdel" style="display:none;">
+			<ul>
+				<li><a href="http://gpk.gov.by/" target="_self"><img src="/bitrix/templates/gpk-ru/img/menu/gpk.png" alt="Государственный пограничный комитет"><p>Государственный пограничный комитет</p></a></li>
+				<li><a href="http://ips.gpk.gov.by/" target="_self"><img src="/bitrix/templates/gpk-ru/img/menu/ips.png" alt="Институт пограничной службы"><p>Институт пограничной службы</p></a></li>
+				<li><a href="http://hospital.gpk.gov.by/" target="_self"><img src="/bitrix/templates/gpk-ru/img/menu/postavy.png" alt="Военный госпиталь органов пограничной службы"><p>Военный госпиталь органов пограничной службы</p></a></li>
+			</ul>
+
+			<ul>
+				<li><a href="http://gpk.gov.by/study/" target="_self"><img src="/bitrix/templates/gpk-ru/img/menu/kak_stat.png" alt="Как стать пограничником"><p>Как стать пограничником</p></a></li>
+				<li><a href="http://tops.gpk.gov.by/" target="_self"><img src="/bitrix/templates/gpk-ru/img/menu/territorialnye_organy.png" alt="Территориальные органы пограничной службы"><p>Территориальные органы пограничной службы</p></a></li>
+				<li><a href="http://bsv.gpk.gov.by/" target="_self"><img src="/bitrix/templates/gpk-ru/img/menu/veteran.png" alt="Белорусский союз ветеранов"><p>Белорусский союз ветеранов</p></a></li>
+			</ul>
+				
+
+				    
+		</div>
+	</div>	
+</div>
+
+<div class="container" style="margin-bottom: 20px;">  
+ 
+	<header>
+		<div class="row" style="text-align: center;">
+			<div class="col-md-2">
+				<a href="http://gpk.gov.by/"><img src="/bitrix/templates/gpk-ru/img/gpk.png" alt="Государственный пограничный комитет Республики Беларусь" class="logo-header"></a>
+			</div>
+			<div class="col-md-7">
+				<h1 class="logo-title">Государственный пограничный комитет Республики Беларусь</h1>
+				<h2 class="logo-title">Информационный портал</h2>
+
+			</div>
+			<div class="col-md-3">
+
+
+				<ul class="social-icon">
+	                <li class="social-icon-item"><a target="_blank" href="http://vk.com/gpkgovby"><i class="fa fa-vk"></i></a></li>
+	                <li class="social-icon-item"><a target="_blank" href="https://twitter.com/GpkGovBy"><i class="fa fa-twitter"></i></a></li>
+	                <li class="social-icon-item"><a target="_blank" href="https://www.facebook.com/GpkGovBy"><i class="fa fa-facebook "></i></a></li> 
+	                <li class="social-icon-item"><a target="_blank" href="https://www.youtube.com/user/GpkGovBy"><i class="fa fa-youtube "></i></a></li> 
+	                <li class="social-icon-item"><a target="_blank" href="http://gpk.gov.by/news/gpk/rss/"><i class="fa fa-rss "></i></a></li>    
+                </ul>
+
+
+				<div style="margin-top: 10px;">
+					<div class="search-form">
+	<form action="/search/index.php" name="search" action="#" method="get" class="form-inline form-search">
+		<div class="input-group">
+			<label class="sr-only" for="searchInput"><i class="fa fa-search" aria-hidden="true"></i></label>
+							<input class="form-control" name="q"  id="searchInput" type="text" name="search" placeholder="Поиск по сайту	
+"/> 
+						<div class="input-group-btn">
+				<button name="s" type="submit" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i></button>
+			</div>  
+		</div>
+	</form>
+</div>
+
+<!--
+<div class="search-form search-form-sm visible-sm">
+	<form action="/search/index.php" name="search" action="#" method="get" class="form-inline form-search pull-right">
+		<div class="input-group">
+			<label class="sr-only" for="searchInput">Поиск</label>
+							<input class="form-control" name="q"  id="searchInput" type="text" name="search" placeholder="Поиск"/>
+						
+			<div class="input-group-btn">
+				<button name="s" type="submit" class="btn btn-primary">Поиск</button>
+			</div>
+		</div>
+	</form>
+</div> -->				</div>
+					
+			</div>
+				
+
+		</div>
+	</header>
+
+
+</div>
+
+
+
+
+<nav class="navbar navbar-inverse" role="navigation">
+	<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Меню</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+ <!--          
+<a class="navbar-brand" href="http://tops.gpk.gov.by/"><i class="fa fa-angle-double-left"></i> Территориальные органы пограничной службы <i class="fa fa-angle-double-right"></i></a> -->
+
+    </div>
+
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+    <div class="inner-nav">
+      <ul class="nav navbar-nav"> 
+      
+      
+		<li  class="active"><a href="/"><i class="glyphicon glyphicon-home"></i></a></li>
+	
+		<li><a href="/gpk/">ГПК</a></li>
+	
+		<li><a href="/informatsiya-dlya-peresekayushhih-granitsu/pravila-peresecheniya-granitsy-dlya-grazhdan-respubliki-belarus.php">Пересечение границы</a></li>
+	
+		<li><a href="/border/chto-takoe-pogranichnaya-zona-i-pogranichnyiy-rezhim.php">Пограничная зона, полоса</a></li>
+	
+		<li><a href="/zakonodatelstvo/">Законодательство</a></li>
+	
+		<li><a href="/vakansii/">Вакансии</a></li>
+	
+		<li><a href="/contacts/">Контакты</a></li>
+	     
+        
+      </ul>
+      
+<!-- 
+<ul class="nav navbar-nav navbar-right">
+      
+<li>
+
+<script type="text/javascript">
+top.BX.defer(top.rsasec_form_bind)({'formid':'system_auth_form6zOYVN','key':{'M':'KYINqDF9oVdK5kek2X0kuoH5fdL8kUoBK6+Cmc80uxJdOZIu90rQ9yMbNh0SxKtJHUPkerLm9siXxXBVULOJdR+ApjjjoYUZxWJ39S74FmiQyZTqMvA5y9pc3Q1wCHrZroha0zS3N7wyCncmylveG653BEohSDaUoVLHg2sUUcE=','E':'AQAB','chunk':'128'},'rsa_rand':'5a01a85014a324.92048155','params':['USER_PASSWORD']});
+</script>
+<font color="#FF0000">Cannot find 'eshop_adapt-auth' template with page ''</font>
+
+</li>
+      </ul> -->
+      </div>
+    </div> <!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+
+<div class="clearfix"></div>
+
+
+
+
+<div class="container">
+<br/> 
+<!--
+
+<div class="row center" >
+	<div class="col-md-12">
+
+
+	</div>
+</div>
+<p><br></p>
+<div style="clear: both;"></div>
+
+--> 
+
+
+
+
+
+<div class="row">
+<div class="col-md-12">				
+<div class="bs-example"><ul class="breadcrumb"><li><a href="/"><i class="fa fa-home"></i></a></li><li><a href="/maps/" title="Интерактивная карта">Интерактивная карта</a></li><li>Очереди в пунктах пропуска</li></ul></div></div>
+</div>	
+
+
+
+
+				
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+							<h3>Очереди в пунктах пропуска</h3>
+						</div>
+					</div>
+		
+			
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+<!-- меню -->
+
+<div class="container">
+	<div class="row">
+
+
+<div class="col-md-12 col-lg-12 col-sm-12">
+<div class="nav-maps">
+<ul>
+
+
+
+
+			<li><a href="/maps/index.php"><img width="55px" src="http://gpk.gov.by/img/maps-menu/road.png" class="hidden-sm hidden-xs" align="left" hspace="5" vspace="5"><span class="hidden-xs"></span>Интерактивная <br>карта</a></li>
+		
+			<li><a href="/maps/punkty-propuska/"><img width="55px" src="http://gpk.gov.by/img/maps-menu/ppr.png" class="hidden-sm hidden-xs" align="left" hspace="5" vspace="5">Информация о пунктах пропуска</a></li>
+		
+			<li><a href="/maps/ochered.php"><img width="45px" src="http://gpk.gov.by/img/maps-menu/car.png" class="hidden-sm hidden-xs" align="left" hspace="5" vspace="5">Информация об очередях<br>в пунктах пропуска</a></li>
+		
+			<li><a href="/maps/pravila-peresecheniya-granicy/index.php"><img width="42px" src="http://gpk.gov.by/img/maps-menu/pravila_peresecheniya.png" class="hidden-sm hidden-xs" align="left" hspace="5" vspace="5">Правила пересечения границы</a></li>
+		
+
+	
+	
+	
+	</ul>
+	</div>
+</div>
+<br> 
+	</div>
+</div>
+ <!--/ меню -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			  
+		<div class="ppr_ocheredi">
+		<div class="header">
+			<span class="info">Очередь на <strong>13.04.2014 07:00</strong></span>
+		</div>
+		<div class="content">
+			<div class="basic">
+				<div class="inner_accordion" >
+					<span>
+						<table style="width:100%">
+							<tr>
+							
+<td class="tblhead line" style="text-align: left;padding-left:9px;font-weight:bolder;font-size:17px;"  rowspan="2">Пункт пропуска</td>
+								
+						
+								<td colspan="3" class="out tblhead">выезд из РБ &nbsp;&nbsp;<i class="fa fa-sign-out"></i></td>
+								<td colspan="2" class="in tblhead">въезд в РБ &nbsp;&nbsp;<i class="fa fa-sign-in"></i></td>
+							</tr>
+
+
+<tr>
+							
+<td class="out tblhead">
+<!--
+<img class="hidden-xs" src="/img/svg/online.png" width="35px" height="auto"/>
+<span class="visible-xs">online<br /> камеры</span> -->
+
+</td>
+
+<td class="out tblhead">
+<img class="hidden-xs" src="/img/svg/car.png" width="50px" height="auto"/>
+<span class="visible-xs">лег.</span>
+</td>
+
+<td class="out tblhead">
+<img class="hidden-xs" src="/img/svg/delivery.png" width="50px" height="auto"/>
+<span class="visible-xs">груз.</span>
+</td>
+
+
+<td class="in tblhead">
+<!--
+<img class="hidden-xs" src="/img/svg/online-2.png" width="35px" height="auto"/>
+<span class="visible-xs">online<br /> камеры</span>
+-->
+</td>	
+					
+<td colspan="1" class="in tblhead" >
+<img class="hidden-xs" src="/img/svg/delivery-2.png"  width="50px" height="auto"/>
+<span class="visible-xs">груз.</span>
+</td>
+
+</tr>
+
+<tr style="height:15px;"><td></td></tr>
+								<tr><td colspan="6"><h4>Латвия</h4></td></tr>
+																										
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/grigorovshchina.php">Григоровщина &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+<a data-toggle="modal" href="#grigorovshchina" title="Очереди в пункте пропуска Григоровщина онлайн">
+<img src="/img/svg/cam.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+<!--<td class="line" title="Григоровщина: "> </td>-->
+
+											<td title="Григоровщина: ">
+												&ndash;											</td>
+
+											<td title="Григоровщина: ">
+												260											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Григоровщина: ">
+												60											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/urbany.php">Урбаны &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+	-->
+	
+</td>
+<!--<td class="line" title="Урбаны: "> </td>-->
+
+											<td title="Урбаны: ">
+												&ndash;											</td>
+
+											<td title="Урбаны: ">
+												160											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Урбаны: ">
+												&ndash;											</td>
+
+										</tr>
+																																												
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																		
+															<tr><td colspan="6"><h4>Литва</h4></td></tr>
+																										
+																																			
+																																			
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/kotlovka.php">Котловка &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+<a data-toggle="modal" href="#kotlovka" title="Очереди в пункте пропуска Котловка онлайн">
+<img src="/img/svg/cam.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+<!--<td class="line" title="Котловка: "> </td>-->
+
+											<td title="Котловка: ">
+												&ndash;											</td>
+
+											<td title="Котловка: ">
+												140											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+<a data-toggle="modal" href="#litva2" title="Очереди в пункте пропуска Котловка онлайн">
+<img src="/img/svg/cam-2.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Котловка: ">
+												10											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/kamennyy-log.php">Каменный Лог &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+<a data-toggle="modal" href="#stone_log" title="Очереди в пункте пропуска Каменный Лог онлайн">
+<img src="/img/svg/cam.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+<!--<td class="line" title="Каменный Лог: "> </td>-->
+
+											<td title="Каменный Лог: ">
+												&ndash;											</td>
+
+											<td title="Каменный Лог: ">
+												250											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+<a data-toggle="modal" href="#litva1" title="Очереди в пункте пропуска Каменный Лог онлайн">
+<img src="/img/svg/cam-2.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Каменный Лог: ">
+												10											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/benyakoni.php">Бенякони &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+<a data-toggle="modal" href="#benuakoni" title="Очереди в пункте пропуска Бенякони онлайн">
+<img src="/img/svg/cam.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+<!--<td class="line" title="Бенякони: "> </td>-->
+
+											<td title="Бенякони: ">
+												&ndash;											</td>
+
+											<td title="Бенякони: ">
+												250											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+<a data-toggle="modal" href="#litva3" title="Очереди в пункте пропуска Бенякони онлайн">
+<img src="/img/svg/cam-2.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Бенякони: ">
+												60											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/privalka.php">Привалка &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+<a data-toggle="modal" href="#privalka" title="Очереди в пункте пропуска Привалка онлайн">
+<img src="/img/svg/cam.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+<!--<td class="line" title="Привалка: "> </td>-->
+
+											<td title="Привалка: ">
+												&ndash;											</td>
+
+											<td title="Привалка: ">
+												150											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+<a data-toggle="modal" href="#litva4" title="Очереди в пункте пропуска Привалка онлайн">
+<img src="/img/svg/cam-2.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Привалка: ">
+												&ndash;											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/losha.php">Лоша &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+	-->
+	
+</td>
+<!--<td class="line" title="Лоша: "> </td>-->
+
+											<td title="Лоша: ">
+												&ndash;											</td>
+
+											<td title="Лоша: ">
+												&ndash;											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Лоша: ">
+												&ndash;											</td>
+
+										</tr>
+																																												
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																		
+															<tr><td colspan="6"><h4>Польша</h4></td></tr>
+																										
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/bruzgi.php">Брузги &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+<a data-toggle="modal" href="#bruzgi" title="Очереди в пункте пропуска Брузги онлайн">
+<img src="/img/svg/cam.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+<!--<td class="line" title="Брузги: "> </td>-->
+
+											<td title="Брузги: ">
+												&ndash;											</td>
+
+											<td title="Брузги: ">
+												50											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+<a data-toggle="modal" href="#kuznica" title="Очереди в пункте пропуска Брузги онлайн">
+<img src="/img/svg/cam-2.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Брузги: ">
+												200											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/berestovitsa.php">Берестовица &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+<a data-toggle="modal" href="#berestovitsa" title="Очереди в пункте пропуска Берестовица онлайн">
+<img src="/img/svg/cam.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+<!--<td class="line" title="Берестовица: "> </td>-->
+
+											<td title="Берестовица: ">
+												50											</td>
+
+											<td title="Берестовица: ">
+												80											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+<a data-toggle="modal" href="#bobr" title="Очереди в пункте пропуска Берестовица онлайн">
+<img src="/img/svg/cam-2.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Берестовица: ">
+												200											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/kozlovichi.php">Козловичи &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+	-->
+	
+</td>
+<!--<td class="line" title="Козловичи: "> </td>-->
+
+											<td title="Козловичи: ">
+												&ndash;											</td>
+
+											<td title="Козловичи: ">
+												50											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+<a data-toggle="modal" href="#kozlovichy" title="Очереди в пункте пропуска Козловичи онлайн">
+<img src="/img/svg/cam-2.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Козловичи: ">
+												150											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/brest-terespol.php"><i class="fa fa-asterisk" aria-hidden="true"></i> Брест &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+	-->
+	
+</td>
+<!--<td class="line" title=" Брест: "> </td>-->
+
+											<td title=" Брест: ">
+												&ndash;											</td>
+
+											<td title=" Брест: ">
+												&ndash;											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+<a data-toggle="modal" href="#terespol" title="Очереди в пункте пропуска &lt;i class=&quot;fa fa-asterisk&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Брест онлайн">
+<img src="/img/svg/cam-2.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title=" Брест: ">
+												&ndash;											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/domachevo.php">Домачево &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+<a data-toggle="modal" href="#domachevo" title="Очереди в пункте пропуска Домачево онлайн">
+<img src="/img/svg/cam.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+<!--<td class="line" title="Домачево: "> </td>-->
+
+											<td title="Домачево: ">
+												&ndash;											</td>
+
+											<td title="Домачево: ">
+												&ndash;											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Домачево: ">
+												&ndash;											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/peschatka.php">Песчатка &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+<a data-toggle="modal" href="#peschatka" title="Очереди в пункте пропуска Песчатка онлайн">
+<img src="/img/svg/cam.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+<!--<td class="line" title="Песчатка: "> </td>-->
+
+											<td title="Песчатка: ">
+												&ndash;											</td>
+
+											<td title="Песчатка: ">
+												&ndash;											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+<a data-toggle="modal" href="#polovcy" title="Очереди в пункте пропуска Песчатка онлайн">
+<img src="/img/svg/cam-2.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Песчатка: ">
+												&ndash;											</td>
+
+										</tr>
+																																												
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																		
+															<tr><td colspan="6"><h4>Украина</h4></td></tr>
+																										
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/aleksandrovka.php">Александровка &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+	-->
+	
+</td>
+<!--<td class="line" title="Александровка: "> </td>-->
+
+											<td title="Александровка: ">
+												&ndash;											</td>
+
+											<td title="Александровка: ">
+												&ndash;											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Александровка: ">
+												&ndash;											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/verkhniy-terebezhov.php">Верхний Теребежов &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+	-->
+	
+</td>
+<!--<td class="line" title="Верхний Теребежов: "> </td>-->
+
+											<td title="Верхний Теребежов: ">
+												&ndash;											</td>
+
+											<td title="Верхний Теребежов: ">
+												&ndash;											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Верхний Теребежов: ">
+												&ndash;											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/veselovka.php">Веселовка &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+	-->
+	
+</td>
+<!--<td class="line" title="Веселовка: "> </td>-->
+
+											<td title="Веселовка: ">
+												&ndash;											</td>
+
+											<td title="Веселовка: ">
+												&ndash;											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Веселовка: ">
+												&ndash;											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/komarin.php">Комарин &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+	-->
+	
+</td>
+<!--<td class="line" title="Комарин: "> </td>-->
+
+											<td title="Комарин: ">
+												&ndash;											</td>
+
+											<td title="Комарин: ">
+												&ndash;											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Комарин: ">
+												&ndash;											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/mokrany.php">Мокраны &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+<a data-toggle="modal" href="#mokrany" title="Очереди в пункте пропуска Мокраны онлайн">
+<img src="/img/svg/cam.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+<!--<td class="line" title="Мокраны: "> </td>-->
+
+											<td title="Мокраны: ">
+												&ndash;											</td>
+
+											<td title="Мокраны: ">
+												&ndash;											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Мокраны: ">
+												&ndash;											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/mokhro.php">Мохро &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+	-->
+	
+</td>
+<!--<td class="line" title="Мохро: "> </td>-->
+
+											<td title="Мохро: ">
+												&ndash;											</td>
+
+											<td title="Мохро: ">
+												&ndash;											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Мохро: ">
+												&ndash;											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/nevel.php">Невель &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+	-->
+	
+</td>
+<!--<td class="line" title="Невель: "> </td>-->
+
+											<td title="Невель: ">
+												&ndash;											</td>
+
+											<td title="Невель: ">
+												&ndash;											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Невель: ">
+												&ndash;											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/novaya-guta.php">Новая Гута &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+<a data-toggle="modal" href="#nova_huta" title="Очереди в пункте пропуска Новая Гута онлайн">
+<img src="/img/svg/cam.png"  width="30px" height="auto"/>
+</a>	-->
+	
+</td>
+<!--<td class="line" title="Новая Гута: "> </td>-->
+
+											<td title="Новая Гута: ">
+												&ndash;											</td>
+
+											<td title="Новая Гута: ">
+												10											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Новая Гута: ">
+												&ndash;											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/novaya-rudnya.php">Новая Рудня &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+	-->
+	
+</td>
+<!--<td class="line" title="Новая Рудня: "> </td>-->
+
+											<td title="Новая Рудня: ">
+												10											</td>
+
+											<td title="Новая Рудня: ">
+												&ndash;											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Новая Рудня: ">
+												&ndash;											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/oltush.php">Олтуш &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+	-->
+	
+</td>
+<!--<td class="line" title="Олтуш: "> </td>-->
+
+											<td title="Олтуш: ">
+												&ndash;											</td>
+
+											<td title="Олтуш: ">
+												&ndash;											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Олтуш: ">
+												&ndash;											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/tomashovka.php">Томашовка &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+	-->
+	
+</td>
+<!--<td class="line" title="Томашовка: "> </td>-->
+
+											<td title="Томашовка: ">
+												&ndash;											</td>
+
+											<td title="Томашовка: ">
+												&ndash;											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Томашовка: ">
+												&ndash;											</td>
+
+										</tr>
+																																												
+																											
+										<tr class="tr2">
+											<td class="name line ppr-name-ochered">
+												<span class="vcard">
+<span class="geo"> <a href="/maps/punkty-propuska/glushkevichi.php">Глушкевичи &nbsp;<i class="fa fa-angle-double-right"></i></a></span>
+												</span>
+											</td>
+<td class="camera-out"><!-- камеры выезд -->
+<!-- 
+	-->
+	
+</td>
+<!--<td class="line" title="Глушкевичи: "> </td>-->
+
+											<td title="Глушкевичи: ">
+												&ndash;											</td>
+
+											<td title="Глушкевичи: ">
+												&ndash;											</td>
+
+
+
+<td class="camera-out"><!-- камеры вьезд -->
+<!--
+	-->
+	
+</td>
+
+
+
+
+
+											<td colspan="2" title="Глушкевичи: ">
+												&ndash;											</td>
+
+										</tr>
+																											
+															<tr><td colspan="6"><h4>Пункты пропуска с камерой</h4></td></tr>
+																										
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																																			
+																		
+								
+						</table>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br />
+
+<!-- //яндекс реклама постер горизонтальный 4 объявления -->
+<div>
+ <br>
+	<br>
+
+</div>
+<br>
+<!-- gpk.gov.by -->
+<!-- //яндекс реклама постер горизонтальный 4 объявления  -->
+
+
+		</div>
+		<div class="col-md-4">
+		
+		
+	<div style="background:#1d8570; width:100%; border:1px solid #045746;">
+		<ul class="sky-mega-menu sky-mega-menu-pos-right sky-mega-menu-anim-scale" style="z-index:998;">
+																						<li class=""><a href="/maps/ochered.php"><img width="27px" height="30px" src="http://gpk.gov.by/img/maps-menu/car.png" align="left" style="margin:0 10px 0px 0;"> Очереди в пунктах пропуска</a></li>
+																																			<li class=""><a href="/maps/obstanovka-onlayn-v-avtodorozhnykh-punktakh-propuska.php"><img width="30px" height="32px"  src="http://gpk.gov.by/img/maps-menu/cam-online.png" align="left" style="margin:0 14px 3px 3px;"> Обстановка онлайн в автодорожных пунктах пропуска</a></li>
+																																			<li class=""><a href="/maps/rasstoyanie-do-blizhayshego-punkta-propuska.php"><img width="30px" height="28px" src="http://gpk.gov.by/img/maps-menu/map-perspective.png" align="left" style="margin:0 10px 0px 0;"> Расстояние между пунктами пропуска</a></li>
+																																			<li class="selected"><a href="/maps/arkhiv-ocheredey.php"><img width="26px" height="28px"  src="http://gpk.gov.by/img/maps-menu/arhiv.png" align="left" style="margin:0 14px 3px 3px;"> Архив очередей</a></li>
+																					</ul>
+	</div>
+	
+
+<br /><br />
+
+
+<!-- Yandex.RTB R-A-160156-1  -->
+<div id="yandex_rtb_R-A-160156-1"></div>
+<script type="text/javascript">
+    (function(w, d, n, s, t) {
+        w[n] = w[n] || [];
+        w[n].push(function() {
+            Ya.Context.AdvManager.render({
+                blockId: "R-A-160156-1",
+                renderTo: "yandex_rtb_R-A-160156-1",
+                horizontalAlign: true,
+                async: true
+            });
+        });
+        t = d.getElementsByTagName("script")[0];
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.src = "//an.yandex.ru/system/context.js";
+        s.async = true;
+        t.parentNode.insertBefore(s, t);
+    })(this, this.document, "yandexContextAsyncCallbacks");
+</script>
+
+
+<p>
+ <br>
+</p>
+
+<!-- Yandex.RTB R-A-218628-1-wb -->
+<div id="yandex_rtb_R-A-218628-1">
+</div>
+ <script type="text/javascript">
+    (function(w, d, n, s, t) {
+        w[n] = w[n] || [];
+        w[n].push(function() {
+            Ya.Context.AdvManager.render({
+                blockId: "R-A-218628-1",
+                renderTo: "yandex_rtb_R-A-218628-1",
+                horizontalAlign: true,
+                async: true
+            });
+        });
+        t = d.getElementsByTagName("script")[0];
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.src = "//an.yandex.ru/system/context.js";
+        s.async = true;
+        t.parentNode.insertBefore(s, t);
+    })(this, this.document, "yandexContextAsyncCallbacks");
+</script> <br>
+ <br>
+
+<br /><br />
+
+
+		
+
+
+<div style="text-align:left">
+<br />
+<hr />
+<h4>Выберите дату и время <i class="fa fa-calendar"></i></h4>
+<br />
+
+<div class="news-list-arhiv">
+
+<ul class="news-list-arhiv-ul" style="list-style: none;">
+	
+
+	
+	
+<li id="bx_651765591_30178">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30178"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;07.11.2017 14:00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30177">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30177"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;07.11.2017 12:00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30176">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30176"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;07.11.2017 10:00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30175">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30175"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;07.11.2017 08:00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30174">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30174"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;07.11.2017 06:00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30173">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30173"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;07.11.2017 04.00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30172">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30172"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;07.11.2017 02.00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30171">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30171"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;07.11.2017 02:00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30170">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30170"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;07.11.2017 00:00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30169">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30169"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;06.11.2017 22:00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30168">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30168"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;06.11.2017 20:00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30167">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30167"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;06.11.2017 18:00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30166">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30166"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;06.11.2017 16:00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30165">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30165"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;06.11.2017 14:00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30164">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30164"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;06.11.2017 12:00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30163">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30163"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;06.11.2017 10:00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30162">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30162"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;06.11.2017 10:00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30161">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30161"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;06.11.2017 10:00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30160">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30160"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;06.11.2017 08:00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30158">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30158"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;06.11.2017 06:00</b></a><br />
+			</li>
+
+
+
+
+
+	
+
+	
+	
+<li id="bx_651765591_30157">
+							<a class="hvr-underline-from-center" href="/maps/arkhiv-ocheredey.php?ochered_id=30157"><b style="font-size: 18px;"><i class="fa fa-clock-o"></i> &nbsp;&nbsp;06.11.2017 04:00</b></a><br />
+			</li>
+
+
+
+
+
+	<br /><div class="modern-page-navigation">
+	<span class="modern-page-title"></span>
+		<span class="modern-page-first modern-page-current">1</span>
+		<a href="/maps/arkhiv-ocheredey.php?ochered_id=6756&amp;PAGEN_1=2" class="">2</a>
+		<a href="/maps/arkhiv-ocheredey.php?ochered_id=6756&amp;PAGEN_1=3" class="">3</a>
+		<a href="/maps/arkhiv-ocheredey.php?ochered_id=6756&amp;PAGEN_1=4" class="">4</a>
+		<a href="/maps/arkhiv-ocheredey.php?ochered_id=6756&amp;PAGEN_1=5" class="">5</a>
+		<a class="modern-page-dots" href="/maps/arkhiv-ocheredey.php?ochered_id=6756&amp;PAGEN_1=320">...</a>
+		<a href="/maps/arkhiv-ocheredey.php?ochered_id=6756&amp;PAGEN_1=634">634</a>
+		<a class="modern-page-next" href="/maps/arkhiv-ocheredey.php?ochered_id=6756&amp;PAGEN_1=2">След.</a>
+</div></ul>
+</div>
+</div>
+		</div>
+	</div>
+</div>
+
+
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-4 col-md-offset-1 col-lg-4 col-lg-offset-1">
+					
+
+ 
+
+									
+
+</div>
+</div>
+ </div>
+		
+	
+
+	
+<br /><br /><br />
+
+<footer class="footer">
+<div class="container">
+<div class="row footer-des">
+
+<div class="col-md-5">
+  <p><b>© Государственный пограничный комитет
+Республики Беларусь</b></p>
+
+<p>
+220050, г. Минск, ул. Володарского 24<br />
++375 17 216 26 12 
+</p>
+
+<p>
+Режим работы:<br /> 
+понедельник — пятница с 09.00 до 18.00 (в предвыходные и предпраздничные дни — до 17.00), обед с 13.00 до 14.00 <br />
+</p>
+
+
+<p>Круглосуточный телефон "горячей линии" по вопросам пересечения Государственной границы: 
++375 17 216 26 12</p>
+<p>Круглосуточный телефон доверия службы собственной безопасности:<br /> +375 17 265 90 08</p>
+
+<div class="note-div">	
+<span>Если вы заметили ошибку в тексте, пожалуйста, выделите её и нажмите Ctrl+Enter</span>
+</div>
+
+
+</div>
+
+<div class="col-md-4">
+
+  <p><b>Полезная информация</b></p>
+
+<p>
+	<a href="/banner/" target="_self">Рекламодателям</a><br>
+</p>
+
+<br />
+
+<p><b>Наши партнеры</b></p>
+
+
+<p>
+<a href="http://www.skpw.ru/" target="_blank">
+Совет командующих Пограничными войсками
+</a>
+</p>
+
+<p>
+<a href="http://торги.бел" target="_blank">
+Электронная торговая площадка "ТОРГИБЕЛ" 
+</a>
+</p>
+
+
+
+<p>
+	<a href="http://www.webexpert.by/" target="_blank">Селлинговое агентство WebExpert</a><br>
+</p>
+
+<p>
+	<a href="http://hoster.by/" target="_blank">Хостинг-провайдер hoster.by</a><br>
+</p>
+
+<p>
+<!--Akavita-centrcounter start-->
+<script type="text/javascript">var AC_ID=17026;var AC_TR=false;
+(function(){var l='//adlik.akavita.com/acode.js'; var t='text/javascript';
+try {var h=document.getElementsByTagName('head')[0];
+var s=document.createElement('script'); s.src=l;s.type=t;h.appendChild(s);}catch(e){
+document.write(unescape('%3Cscript src="'+l+'" type="'+t+'"%3E%3C/script%3E'));}})();
+</script><span id="AC_Image"></span>
+<noscript><a target='_blank' href='http://www.akavita.by/'>
+<img src='//adlik.akavita.com/bin/lik?id=17026&it=1'
+border='0' height='1' width='1' alt='Akavita'/>
+</a></noscript>
+<!--Akavita counter end-->
+
+</p>
+</div>
+
+<div class="col-md-3">
+  <p><b>Ссылки на государственные сайты</b></p>
+
+<p>
+	<a href="http://president.gov.by/" target="_blank">Официальный интернет-портал Президента Республики Беларусь</a>
+</p>
+
+
+
+<p>
+	<a href="http://www.government.by/" target="_blank">Правительство Республики Беларусь</a>
+</p>
+
+<p>
+	<a href="http://www.embassybel.ru/" target="_blank">Сайт Посольства Республики Беларусь в Российской Федерации</a>
+</p>
+
+
+<p>
+	<a href="http://pravo.by/" target="_blank">Национальный правовой Интернет-портал Республики Беларусь</a>
+</p>
+
+<p>
+	<a href="http://portal.gov.by" target="_blank">Единый портал электронных услуг</a>
+</p>
+
+<p>
+	<a href="http://w1.economy.gov.by/ministry/admin_proc.nsf/index.html" target="_blank">Единый интернет-ресурс административных процедур</a>
+</p>
+
+
+</div>
+
+</div>
+</div> 
+  </footer>
+  
+  
+  
+<a id="back-to-top" 
+href="#" 
+class="btn btn-default btn-lg back-to-top" 
+role="button" 
+title="наверх" 
+data-toggle="tooltip" 
+data-placement="left">
+<span class="glyphicon glyphicon-chevron-up"></span>
+</a>
+
+
+
+
+<!-- Modal -->
+    <div class="modal fade bs-example-modal-lg" id="portal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header modal-header-primary">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3>Разделы информационного портала Госпогранкомитета</h3> 
+                </div> 
+<div class="modal-body">    
+<a href="http://tops.gpk.gov.by/" >
+<div class="notice notice-success">
+<strong class="hvr-float-shadow"><i class="fa fa-link" aria-hidden="true"></i> Территориальные органы пограничной службы</strong> 
+</div>
+</a>
+
+<a href="http://ips.gpk.gov.by/" >
+<div class="notice notice-success">
+<strong class="hvr-float-shadow"><i class="fa fa-link" aria-hidden="true"></i> Институт пограничной службы Республики Беларусь</strong>
+</div>
+</a>
+
+<a href="http://gpk.gov.by/study/" > 
+<div class="notice notice-success"> 
+<strong class="hvr-float-shadow"><i class="fa fa-link" aria-hidden="true"></i> Как стать пограничником?</strong>
+</div>
+</a>
+</div>  
+                   
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary pull-left" data-dismiss="modal">закрыть</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!-- Modal -->  
+
+ 
+ 
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="/bitrix/templates/gpk-ru/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/bitrix/templates/gpk-ru/js/jquery.elastislide.js"></script> 
+<script type="text/javascript" src="/bitrix/templates/gpk-ru/bx/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="/bitrix/templates/gpk-ru/js/fotorama.js"></script>
+<script type="text/javascript" src="/bitrix/templates/gpk-ru/js/jquery.preloader.js"></script> 
+<script type="text/javascript" src="/bitrix/templates/gpk-ru/lightbox/lightbox.js"></script>
+<script type="text/javascript" src="/bitrix/templates/gpk-ru/flexisel/jquery.flexisel.js"></script>
+
+
+<script>
+	  /* Demo purposes only */
+  $(".hover").mouseleave(
+    function () {
+      $(this).removeClass("hover");
+    }
+  );
+</script>
+ 
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.slider-news').bxSlider({
+    slideWidth:370,
+    minSlides: 1,
+    maxSlides: 3,
+    moveSlides: 3,
+    slideMargin: 10,
+    controls:true,
+    pager:false,
+  });
+});
+</script> 
+
+
+
+<script type="text/javascript">
+
+$(window).load(function() {
+    $("#flexiselDemo1").flexisel();
+
+    $("#flexiselDemo2").flexisel({
+        visibleItems: 4,
+        itemsToScroll: 3,
+        animationSpeed: 200,
+        infinite: true,
+        navigationTargetSelector: null,
+        autoPlay: {
+            enable: false,
+            interval: 5000,
+            pauseOnHover: true
+        },
+        responsiveBreakpoints: { 
+            portrait: { 
+                changePoint:480,
+                visibleItems: 1,
+                itemsToScroll: 1
+            }, 
+            landscape: { 
+                changePoint:640,
+                visibleItems: 2,
+                itemsToScroll: 2
+            },
+            tablet: { 
+                changePoint:768,
+                visibleItems: 3,
+                itemsToScroll: 3
+            }
+        },
+        loaded: function(object) {
+            console.log('Slider loaded...');
+        },
+        before: function(object){
+            console.log('Before transition...');
+        },
+        after: function(object) {
+            console.log('After transition...');
+        }
+    });
+    
+    
+    
+    
+     $("#homenews").flexisel({
+        visibleItems: 3,
+        itemsToScroll: 3,
+        animationSpeed: 200,
+        infinite: true, 
+         autoPlay: {
+            enable: false,
+            interval: 5000,
+            pauseOnHover: true 
+        },
+        responsiveBreakpoints: { 
+            portrait: { 
+                changePoint:480,
+                visibleItems: 1,
+                itemsToScroll: 1
+            }, 
+            landscape: { 
+                changePoint:640,
+                visibleItems: 2,
+                itemsToScroll: 2
+            },
+            tablet: { 
+                changePoint:768,
+                visibleItems: 2,
+                itemsToScroll: 2
+            }
+        },
+        loaded: function(object) {
+            console.log('Slider loaded...');
+        },
+        before: function(object){
+            console.log('Before transition...');
+        },
+        after: function(object) {
+            console.log('After transition...');
+        }
+    });
+      
+     
+     
+    
+    $("#flexlat").flexisel({
+        visibleItems: 1,
+        itemsToScroll: 1,   
+        animationSpeed: 500,
+              
+        autoPlay: {
+            enable: false,
+            interval: 5000,
+            pauseOnHover: true
+        }   
+              
+    });     
+    
+      $("#flexlat-razdel").flexisel({
+        visibleItems: 2,
+        itemsToScroll: 1,         
+        autoPlay: {
+            enable: false,
+            interval: 7000,
+            pauseOnHover: true
+        }        
+    });
+  
+    $("#flexlit").flexisel({
+        visibleItems:1,
+        itemsToScroll: 1,         
+        autoPlay: {
+            enable: false,
+            interval: 6000,
+            pauseOnHover: true
+        }        
+    });
+    
+      $("#flexlit-razdel").flexisel({
+        visibleItems: 2,
+        itemsToScroll: 1,         
+        autoPlay: {
+            enable: false,
+            interval: 7000,
+            pauseOnHover: true
+        }        
+    });
+    
+      $("#flexpoland").flexisel({
+        visibleItems: 1,
+        itemsToScroll: 1,         
+        autoPlay: {
+            enable: false,
+            interval: 7000,
+            pauseOnHover: true
+        }        
+    });
+
+      $("#flexpoland-razdel").flexisel({
+        visibleItems: 2,
+        itemsToScroll: 1,         
+        autoPlay: {
+            enable: false,
+            interval: 7000,
+            pauseOnHover: true
+        }        
+    });
+    
+    $("#flexua").flexisel({
+        visibleItems: 1,
+        itemsToScroll: 1,         
+        autoPlay: {
+            enable: false,
+            interval: 8000,
+            pauseOnHover: true
+        }        
+    });    
+
+      $("#flexua-razdel").flexisel({
+        visibleItems: 2,
+        itemsToScroll: 1,         
+        autoPlay: {
+            enable: false,
+            interval: 7000,
+            pauseOnHover: true
+        }        
+    });
+    
+    
+});
+</script>
+
+
+
+<script type="text/javascript">
+$(function(){
+	
+	$("#gallery").preloader();
+	
+	});
+</script>
+
+
+
+ 
+
+<script>
+ function toggleIcon(e) {
+    $(e.target)
+        .prev('.panel-heading')
+        .find(".more-less")
+        .toggleClass('glyphicon-plus glyphicon-minus');
+}
+$('.panel-group').on('hidden.bs.collapse', toggleIcon);
+$('.panel-group').on('shown.bs.collapse', toggleIcon);
+ 
+</script>
+
+
+<script>
+	
+	$frameheight = $(window).height() - 40;
+	$(".sourceView").css("height",$frameheight);
+	
+	$(window).resize(function() {
+		$frameheight = $(window).height() - 40 ;
+		$(".sourceView").css("height",$frameheight);
+	});
+	
+});
+</script>
+ 
+ 
+<!-- Загрузка изображений через jQuery -->		
+<!-- <script>
+$.fn.preload = function() {
+   this.each(function(){
+       $('<img/>')[0].src = this;
+   });
+}
+
+$(['img1.jpg','img2.jpg','img3.jpg']).preload();
+</script> -->
+<!-- Загрузка изображений через jQuery -->
+
+
+		
+		<script type="text/javascript">
+			$( '#carousel' ).elastislide();
+		</script>
+		
+		
+<script>
+$(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        
+        $('#back-to-top').tooltip('show');
+
+});
+</script>
+
+
+
+<!--
+<script>
+    if ($(document).height() <= $(window).height())
+  	$("footer.footer").addClass("navbar-fixed-bottom");
+</script>
+-->
+
+
+<!-- tooltip -->
+<script>	
+$('#tooltip-show').tooltip('hide');
+$('#tooltip-date').tooltip('hide');
+$('#tooltip-tags').tooltip('hide');
+ </script>
+<!-- / tooltip -->
+
+
+		<!-- открывающиеся и закр списки -->
+<script>
+function anichange (objName) {
+ if ( $(objName).css('display') == 'none' ) {
+ $(objName).animate({height: 'show'}, 400);
+ } else {
+ $(objName).animate({height: 'hide'}, 200);
+ }
+}
+</script>
+<!-- / открывающиеся и закр списки -->
+
+
+
+<script>
+	$(document).ready(function(){
+    $(".button-a a").click(function(){
+        $(".overlay-top-bar").fadeToggle(200);
+       $(this).toggleClass('btn-open').toggleClass('btn-close');
+    });
+});
+$('.overlay-top-bar').on('click', function(){
+    $(".overlay-top-bar").fadeToggle(200);   
+    $(".button-a a").toggleClass('btn-open').toggleClass('btn-close');
+    open = false;
+});
+</script>
+
+<script>
+	function reSetIframe(iframeid){
+    var iframe = document.getElementById(iframeid);
+    var height = 500;
+    try{
+        var bHeight = iframe.contentWindow.document.body.scrollHeight;
+        var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+        height = Math.max(bHeight, dHeight);
+        iframe.height = height;
+    }catch (ex){
+        height = Math.max(bHeight, dHeight);
+        iframe.height = height;
+   }
+}
+</script>
+
+
+
+<script>
+	
+	$(window).resize(function () {
+
+            $.each($('.metro-tile-page:not(.active)'), function () {
+                $(this).css('right', ($(this).width() + 30) * -1);
+            });
+        });
+        
+        $(document).ready(function () {
+            $.each($(".metro-tile-page"), function (index, tile) {
+                $.each($(tile).children('imgg'), function (ind, imgg) {
+                    $(tile).css('background-image', 'url(' + $(imgg).attr('src') + ')');
+                    $(imgg).hide();
+                });
+            });
+            
+            $.each($('.metro-tile-page:not(.active)'), function () {
+                $(this).css('right', ($(this).width() + 30) * -1);
+            });
+
+            $('.metro-tile').hover(function () {
+                $(this).children('.active').clearQueue();
+                $(this).children(':not(.active)').clearQueue();
+
+                $(this).children('.active').animate({ 'right': $(this).width() + 30 }, 500, 'swing');
+                $(this).children(':not(.active)').animate({ 'right': '5px' }, 500, 'swing');
+            }, function () {
+
+                $(this).children('.active').clearQueue();
+                $(this).children(':not(.active)').clearQueue();
+
+                $(this).children(':not(.active)').animate({ 'right': ($(this).width() + 10) * -1 }, 500, 'swing');
+                $(this).children('.active').animate({ 'right': '5px' }, 500, 'swing');
+            });
+        });
+        
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.slider4').bxSlider({
+    slideWidth: 380,
+    minSlides: 1,
+    maxSlides: 3,
+    moveSlides: 1,
+    slideMargin: 0,
+    controls:true,
+    pager:false,
+  });
+});
+</script>  
+
+ 
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.slider-gallery').bxSlider({
+    slideWidth:380,
+    minSlides: 1,
+    maxSlides: 2,
+    moveSlides: 1,
+    slideMargin: 10,
+    controls:true,
+    pager:false,
+  });
+});
+</script>  
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.slider-infogr').bxSlider({
+    slideWidth:380,
+    minSlides: 1,
+    maxSlides: 2,
+    moveSlides: 1,
+    slideMargin: 10,
+    controls:true,
+    pager:false,
+  });
+});
+</script> 
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.slider-video').bxSlider({
+    slideWidth:450,
+    minSlides: 1,
+    maxSlides: 1,
+    moveSlides: 1,
+    slideMargin: 10,
+    controls:true,
+    pager:false,
+  });
+});
+</script> 
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.slider-cam-ppr').bxSlider({
+    slideWidth:330,
+    minSlides: 1,
+    maxSlides: 4,
+    moveSlides: 1,
+    slideMargin: 5,
+    controls:true,
+    pager:false,
+  });
+});
+</script> 
+
+
+
+
+
+
+
+<script>
+        $(function() {
+            $(".toggle-mnu").click(function() {
+                $("#razdel").slideToggle();
+                $(".hamburger").toggleClass("is-active");
+                $(this).toggleClass("active"); return false;
+
+            });
+        });
+</script>
+
+<script>
+  jQuery(document).ready(function($) {
+ 
+        $('#myCarousel').carousel({
+                interval: 5000
+        });
+ 
+        $('#carousel-text').html($('#slide-content-0').html());
+ 
+        //Handles the carousel thumbnails
+        $('[id^=carousel-selector-]').click( function(){
+                var id_selector = $(this).attr("id");
+                var id = id_selector.substr(id_selector.length -1);
+                var id = parseInt(id);
+                $('#myCarousel').carousel(id);
+        });
+ 
+ 
+        // When the carousel slides, auto update the text
+        $('#myCarousel').on('slid.bs.carousel', function (e) {
+                 var id = $('.item.active').data('slide-number');
+                $('#carousel-text').html($('#slide-content-'+id).html());
+        });
+});
+</script>
+
+<script>
+	  jQuery(document).ready(function($) {
+ 
+        $('#myCarousel-2').carousel({
+                interval: 5000
+        });
+ 
+        $('#carousel-text-2').html($('#film-content-0').html());
+ 
+        //Handles the carousel thumbnails
+       $('[id^=carousel-selector-]').click( function(){
+            var id = this.id.substr(this.id.lastIndexOf("-") + 1);
+            var id = parseInt(id);
+            $('#myCarousel-2').carousel(id);
+        });
+ 
+ 
+        // When the carousel slides, auto update the text
+        $('#myCarousel-2').on('slid.bs.carousel', function (e) {
+                 var id = $('.item.active').data('slide-number');
+                $('#carousel-text-2').html($('#film-content-'+id).html());
+        }); 
+});
+</script>
+
+   
+<!-- (C)2000-2015 Gemius SA - gemiusAudience / gpk.gov.by / Home Page -->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var pp_gemius_identifier = '0htFZqePYVQsphHp.o7GLXZ238MBWSL_zozQ2OKc5Lv.d7';
+// lines below shouldn't be edited
+function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');
+(function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');
+gt.setAttribute('defer','defer'); gt.src=l+'://gaby.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script');
+//--><!]]>
+</script>
+<!-- (C)2000-2015 Gemius SA - gemiusAudience / gpk.gov.by / Home Page -->
+
+
+
+
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter33495133 = new Ya.Metrika({
+                    id:33495133,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/33495133" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+  
+
+
+
+<script type="text/javascript" src="http://www.google-analytics.com/urchin.js" ></script>
+
+		<script type="text/javascript">
+			_uacct = "UA-4532602-1";
+			urchinTracker();
+		</script>
+
+<script charset="UTF-8" src="//cdn.sendpulse.com/js/push/f82d985ae7780c229d3100b4c30172cb_0.js" async>
+</script>
+ 
+ 
+
+<script>
+ 
+$("figure").mouseleave(function() {
+  $(this).removeClass("hover");
+});
+
+</script>
+
+
+
+<script>
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+</script>
+
+
+</body>
+</html>
+  
+  
+  
+  
+  
